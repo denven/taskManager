@@ -51,7 +51,6 @@ def update(id):
       # get task content from form
       task_content = request.form['content']
       try:
-        db.session.query(FooBar).update({"x": 5})
         db.session.commit()
         return redirect('/update')
       except:
