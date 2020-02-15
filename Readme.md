@@ -1,5 +1,6 @@
 # Flask Intro App
-  A simple todo task manager web app.
+  A simple todo task manager web app. 
+  https://taskmasterbyflask.herokuapp.com/
 
 ## Install python3 and pip3
 
@@ -28,6 +29,7 @@
 ## host on heroku.com
 1.Register and install heroku cli tool
 - `sudo snap install --classic heroku`
+- **`source env/bin/activate`**
 - `$ heroku login`
 
 2.Freeze the requirements in virtual env:
@@ -49,4 +51,5 @@
 5.Create Heroku App 
 - `keroku create domainname`
 - `git remote -v`
+- `git add .` and `git commit -m 'xxx'`
 - `git push heroku master`
