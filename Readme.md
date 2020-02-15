@@ -5,6 +5,12 @@
 
 - `$ python3 --version`
 - `$ pip3 --version`
+- Remove pylint wrong warning or errors in VSCode by:
+  - `$ pip install pylint_flask_sqlalchemy` 
+  - and add the following line in settings.json
+    ```
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask_sqlalchemy"]
+    ```
 
 ## Setup work environment
 
@@ -39,9 +45,9 @@
 4.Create `Procfile` file(tell heroku what to do) 
 - `touch Procfile`
 - Add the following content
-```
-web: gunicorn app:app
-```
+  ```
+  web: gunicorn app:app
+  ```
 
 5.Create Heroku App 
 - `keroku creare domainname`
