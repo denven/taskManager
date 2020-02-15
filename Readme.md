@@ -24,9 +24,6 @@
 
   - `source env/bin/active`
   - `python3`
-  - `from app import db`
-  - `db.create_all()`
-  - `exit()`
 
 ## host on heroku.com
 1.Register and install heroku cli tool
@@ -50,7 +47,6 @@
   ```
 
 5.Create Heroku App 
-- `keroku creare domainname`
+- `keroku create domainname`
 - `git remote -v`
 - `git push heroku master`
-
