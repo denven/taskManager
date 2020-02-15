@@ -14,6 +14,14 @@
 - Install dependencies: `pip3 install flask flask-sqlalchemy'`
 - Run applicatoin in virtual env: `python3 app.py`
 
+## Create sqlite database from app.py
+
+  - `source env/bin/active`
+  - `python3`
+  - `from app import db`
+  - `db.create_all()`
+  - `exit()`
+
 ## host on heroku.com
 1.Register and install heroku cli tool
 - `sudo snap install --classic heroku`
