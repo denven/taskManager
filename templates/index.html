@@ -1,23 +1,23 @@
 {% extends 'base.html' %}
 
-{% block head %}    
-<title>Task Master</title>
+{% block header %}    
+<title>Task sfs Master</title>
 {% endblock %}
 
 {% block body %}
-<div class="content">
+<div class="container-col">
     <h1 style="text-align: center;">Task Master</h1>
     {% if tasks | length < 1 %}
         <h4>There are no tasks, create one below!</h4>
     {% else %}
-        <table>
+        <table style="margin: auto;">
             <tr>
-                <th>Task</th> <th>Added</th> <th>Actions</th>
+                <th>Created Time</th> <th>Task Content</th> <th>Actions</th>
             </tr>
             {% for task in tasks %}
             <tr>
-                <td>{{ task.content }}</td>
                 <td>{{ task.date_created.date() }}</td>
+                <td>{{ task.content }}</td>
                 <td>
                     <a href="/delete/{{task.id}}">Delete</a>
                     <br>
@@ -27,10 +27,10 @@
             {% endfor %}
         </table>
     {% endif %}
-
-    <div class="form">
+    <br>
+    <div>
         <form action="/" method="POST">
-            <input type="text" name="content" id="content">
+            <input class='input' type="text" name="content" id="content">
             <input type="submit" value="Add Task">
         </form>        
     </div>
