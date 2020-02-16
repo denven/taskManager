@@ -50,6 +50,7 @@ def update(id):
     if request.method == 'POST':
       # get task content from form
       task.content = request.form['content']
+      print (task.content)
       try:
         db.session.commit()
         return redirect('/')

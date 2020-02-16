@@ -53,3 +53,7 @@
 - `git remote -v`
 - `git add .` and `git commit -m 'xxx'`
 - `git push heroku master`
+
+6.Revision update to heroku for existing app
+- `heroku git:remote -a domainname` # when local repo doesn't have heroku remote
+- `git push heroku master`
